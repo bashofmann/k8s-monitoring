@@ -1,0 +1,21 @@
+sources:
+  - service
+  - ingress
+
+provider: digitalocean
+
+digitalocean:
+  apiToken: <PLACEHOLDER>
+
+domainFilters:
+  - plgrnd.be
+interval: "1m"
+registry: "txt"
+txtOwnerId: bhofmann-monitoring
+policy: sync
+resources:
+  limits:
+    memory: 50Mi
+  requests:
+    memory: 50Mi
+    cpu: 10m

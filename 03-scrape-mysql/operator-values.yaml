@@ -1,0 +1,8 @@
+# does not install the servicemonitor in the cattle-prometheus namespace
+#serviceMonitor:
+#  enabled: true
+
+orchestrator:
+  config:
+    # `reset slave all` and `set read_only=0` on promoted master
+    ApplyMySQLPromotionAfterMasterFailover: true
