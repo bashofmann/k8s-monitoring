@@ -1,13 +1,8 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  labels:
-    k8s-app: blackbox-exporter
-    io.cattle.field/appId: cluster-monitoring
-    release: cluster-monitoring
-    source: rancher-monitoring
   name: blackbox-exporter
-  namespace: cattle-prometheus
+  namespace: monitoring
 spec:
   endpoints:
     - interval: 30s
@@ -27,7 +22,7 @@ spec:
           targetLabel: module
   namespaceSelector:
     matchNames:
-      - cattle-prometheus
+      - monitoring
   selector:
     matchLabels:
       app: blackbox-exporter

@@ -42,7 +42,7 @@ data:
             "type": "dashboard"
           },
           {
-            "datasource": "RANCHER_MONITORING",
+            "datasource": "Prometheus",
             "enable": true,
             "expr": "sum(changes(nginx_ingress_controller_config_last_reload_successful_timestamp_seconds{instance!=\"unknown\",controller_class=~\"$controller_class\",namespace=~\"$namespace\"}[30s])) by (controller_class)",
             "hide": false,
@@ -73,7 +73,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "format": "ops",
           "gauge": {
             "maxValue": 100,
@@ -155,7 +155,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -238,7 +238,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "format": "percentunit",
           "gauge": {
             "maxValue": 100,
@@ -320,7 +320,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 0,
           "format": "none",
           "gauge": {
@@ -404,7 +404,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 0,
           "format": "none",
           "gauge": {
@@ -484,7 +484,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -594,7 +594,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 2,
           "editable": false,
           "error": false,
@@ -695,7 +695,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -811,7 +811,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 2,
           "editable": false,
           "error": false,
@@ -913,7 +913,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "decimals": 3,
           "editable": false,
           "error": false,
@@ -1016,7 +1016,7 @@ data:
         },
         {
           "columns": [],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "fontSize": "100%",
           "gridPos": {
             "h": 8,
@@ -1241,7 +1241,7 @@ data:
               "value": "current"
             }
           ],
-          "datasource": "RANCHER_MONITORING",
+          "datasource": "Prometheus",
           "fontSize": "100%",
           "gridPos": {
             "h": 8,
@@ -1329,7 +1329,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "RANCHER_MONITORING",
+            "datasource": "Prometheus",
             "hide": 0,
             "includeAll": true,
             "label": "Namespace",
@@ -1352,7 +1352,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "RANCHER_MONITORING",
+            "datasource": "Prometheus",
             "hide": 0,
             "includeAll": true,
             "label": "Controller Class",
@@ -1375,7 +1375,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "RANCHER_MONITORING",
+            "datasource": "Prometheus",
             "hide": 0,
             "includeAll": true,
             "label": "Controller",
@@ -1399,7 +1399,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "RANCHER_MONITORING",
+            "datasource": "Prometheus",
             "hide": 0,
             "includeAll": true,
             "label": "Ingress",

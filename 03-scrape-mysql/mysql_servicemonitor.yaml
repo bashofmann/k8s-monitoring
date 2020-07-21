@@ -1,12 +1,8 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  labels:
-    io.cattle.field/appId: cluster-monitoring
-    release: cluster-monitoring
-    source: rancher-monitoring
   name: mysql-operator
-  namespace: cattle-prometheus
+  namespace: default
 spec:
   endpoints:
   - interval: 10s

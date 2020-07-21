@@ -1,6 +1,5 @@
-# does not install the servicemonitor in the cattle-prometheus namespace
-#serviceMonitor:
-#  enabled: true
+serviceMonitor:
+  enabled: true
 
 orchestrator:
   config:

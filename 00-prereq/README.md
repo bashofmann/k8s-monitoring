@@ -1,6 +1,7 @@
 # Prerequisites
 
 ## Install Longhorn
+## Install to to directly move namespaces to projects
 
 ## Install cert-manager
 

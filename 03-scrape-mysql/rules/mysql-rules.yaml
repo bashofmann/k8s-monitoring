@@ -1,12 +1,8 @@
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
-  labels:
-    io.cattle.field/appId: cluster-monitoring
-    release: cluster-monitoring
-    source: rancher-monitoring
   name: mysql-rules
-  namespace: cattle-prometheus
+  namespace: default
 spec:
   groups:
     - name: ./mysql.rules
